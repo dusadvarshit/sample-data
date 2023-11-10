@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wazer%jue1%v3-2a$=-(952+jz@&0n%=j1ik+t^=#2*8%ahaj@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
