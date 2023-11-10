@@ -3,11 +3,14 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<h1>Projects</h1>
+<h1>Bios</h1>
 <div class="row">
 {% for bio in bios %}
     <div class="col-md-4">
         <div class="card mb-2">
+            {% if bio.image %}
+                <img class="card-img-top" src="{{ bio.image.url }}">
+            {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ bio.profession }}</h5>
                 <p class="card-text">{{ bio.description }}</p>
